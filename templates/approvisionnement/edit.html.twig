@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Approvisionnement{% endblock %}
+
+{% block body %}
+    <h1>Edit Approvisionnement</h1>
+
+    {{ include('approvisionnement/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_approvisionnement_index') }}">back to list</a>
+
+    {{ include('approvisionnement/_delete_form.html.twig') }}
+{% endblock %}
